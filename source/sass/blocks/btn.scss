@@ -1,18 +1,21 @@
 .btn {
-  display: inline-flex;
-  padding: 10px 20px;
+  display: block;
+  padding: 17.5px 0 14.5px;
+  text-align: center;
+
+  min-width: 250px;
 
   color: $color-default-white;
+  font-family: $ff-muller-reg;
+  font-weight: 400;
 
-  background-color: $color-neon-blue;
+  background-color: $color-orange;
   border: none;
+  border-radius: 10em;
+  filter: drop-shadow(0px 7px 15px rgba(249, 87, 46, 0.60));
   cursor: pointer;
 
-  transition: opacity $trans-default;
-
-  &--red {
-    background-color: $color-torch-red;
-  }
+  transition: background-color $trans-default;
 
   &:disabled {
     opacity: 0.5;
@@ -21,6 +24,6 @@
   }
 
   @include hover-focus {
-    opacity: 0.8;
+    background-color: $color-coral;
   }
 }

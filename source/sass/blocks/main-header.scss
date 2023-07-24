@@ -1,0 +1,14 @@
+.main-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 48px;
+}
+
+.main-header__contacts {
+  display: flex;
+  align-items: center;
+  font-family: $ff-muller-reg;
+  font-weight: 400;
+}
