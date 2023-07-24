@@ -12,7 +12,7 @@
   background-color: $color-orange;
   border: none;
   border-radius: 10em;
-  filter: drop-shadow(0px 7px 15px rgba(249, 87, 46, 0.60));
+  box-shadow: 0px 7px 15px rgba(249, 87, 46, 0.60);
   cursor: pointer;
 
   transition: background-color $trans-default;

@@ -20,9 +20,8 @@
       <header class="main-header">
         <div class="main-header__wrapper container">
           <a class="main-header__logo" href="index.html">
-            <img src="img/svg/logo.svg">
+            <img src="img/svg/logo.svg" alt="логотип компании Fix ремонт">
           </a>
-          <button class="btn">Узнайте о запуске первым</button>
           <a class="main-header__contacts" href="#contacts">
             <svg width="24" height="24">
               <use href="img/sprite.svg#icon-phone"></use>
@@ -35,43 +34,252 @@
       </header>
       <main>
         <section class="intro">
-          <div class="container">
+          <div class="intro__wrapper container">
+            <h1 class="intro__title">
+              Ремонт квартир в типовых домах
+            </h1>
+            <p class="intro__description">
+              Готовый дизайн-проект, работы и материалы за 3 месяца от 610 т.р.
+            </p>
+            <a class="intro__btn btn" href="#form">
+              Узнайте о запуске первым
+            </a>
+            <span class="intro__text">
+              Старт весной 2016
+            </span>
+
+            <div class="intro__video-wrapper">
+              <div class="intro-video"></div>
+            </div>
+
+            <a class="intro__scroll-btn" href="#about">
+              <svg width="41" height="30">
+                <use href="img/sprite.svg#icon-scroll-down"></use>
+              </svg>
+              <span>
+                Листайте вниз, чтобы ничего не упустить
+              </span>
+            </a>
+          </div>
+        </section>
+
+        <section class="about">
+          <div class="about__wrapper container">
+            <h2 class="about__title title">
+              FIX Ремонт — это легко
+            </h2>
+            <p class="about__description description">
+              Готовые проекты, проверенные материалы и умелые руки
+            </p>
+
+            <ul class="about__lis">
+              <li class="about__item">
+                <h3 class="about__item-title">
+                  Опытная команда
+                </h3>
+                <p class="about__item-description">
+                  Команда проектировщиков и строителей со стажем работы более 6 лет
+                </p>
+              </li>
+              <li class="about__item">
+                <h3 class="about__item-title">
+                  Типовые дизайн-проекты
+                </h3>
+                <p class="about__item-description">
+                  Три стиля чистовой отделки «под ключ» и спектр дополнительных услуг
+                </p>
+              </li>
+              <li class="about__item">
+                <h3 class="about__item-title">
+                  Фиксированная смета
+                </h3>
+                <p class="about__item-description">
+                  Никаких дополнительных расходов во время ремонта. Расчет стоимости при заключении договора
+                </p>
+              </li>
+              <li class="about__item about__item--square">
+                <h3 class="about__item-title">
+                  Срок работ
+                </h3>
+                <p class="about__item-description about__item-description--big">
+                  3 месяца
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="examples">
+          <div class="examples__wrapper container">
+            <h2 class="examples__title title">
+              3 стиля интерьера
+            </h2>
+            <p class="examples__description description">
+              Скандинавский, классический и эко-стиль
+            </p>
+            <ul class="examples__list">
+              <li class="examples__item">
+                <figure>
+                  <picture>
+                    <source>
+                    <img src="img/eco.jpg" width="750" height="500" alt="Кухня в экостиле.">
+                  </picture>
+                  <figcaption>
+                    Кухня в экостиле
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="examples__item">
+                <figure>
+                  <picture>
+                    <source>
+                    <img src="img/scandinavian.jpg" width="750" height="500" alt="Ванной комната в скандинавском стиле.">
+                  </picture>
+                  <figcaption>
+                    Кафельная плитка в ванной комнате в скандинавском стиле
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="examples__item">
+                <figure>
+                  <picture>
+                    <source>
+                    <img src="img/classic.jpg" width="750" height="500" alt="Гостиная в классическом стиле.">
+                  </picture>
+                  <figcaption>
+                    Гостиная в классическом стиле
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="form">
+          <div class="form__wrapper container">
+            <form class="form" method="post">
+              <h2 class="form__title title">
+                Узнайте о запуске сервиса первым
+              </h2>
+              <p class="form__description">
+                Первым 10 клиентам стальная входная дверь в подарок
+              </p>
+
+              <div class="form__field form__field--name">
+                <label for="user-name">
+                  Имя и фамилия*
+                </label>
+                <input type="text" id="user-name" name="user-name" placeholder="Имя и фамилия*" required>
+              </div>
+
+              <div class="form__field form__field--email">
+                <label for="user-email">
+                  Email*
+                </label>
+                <input type="email" id="user-email" name="user-email" placeholder="Email*" required>
+              </div>
+
+              <div class="form__field form__field--phone">
+                <label for="user-phone">
+                  Телефон
+                </label>
+                <input type="tel" id="user-phone" name="user-phone" placeholder="Телефон" data-phone-input>
+              </div>
+
+              <button class="form__button btn"type="submit">
+                Подписаться
+              </button>
+              <span>
+                * Обязательные для заполнения поля
+              </span>
+              <a href="#" target="_blank" rel="noopener noreferrer">Политика конфиденциальности</a>
+            </form>
           </div>
         </section>
       </main>
-      <footer>
-        <div class="container"></div>
+      <footer class="footer">
+        <div class="footer__wrapper container">
+          <ul class="footer__socials socials">
+            <li class="socials__item">
+              <a href="#" class="socials__link">
+                <svg width="51" height="51">
+                  <use href="img/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link">
+                <svg width="51" height="51">
+                  <use href="img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link">
+                <svg width="51" height="51">
+                  <use href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <h2 class="footer__title">
+            Следите за нашим развитием
+          </h2>
+
+          <p class="footer__description">
+            Подпишитесь на наши аккаунты в соц. сетях, знакомьтесь с нашими проектами и тем, что нас вдохновляет
+          </p>
+
+          <div class="footer__contancts contacts">
+            <a class="contacts__phone" href="tel:+78129035445">
+              <svg width="24" height="24">
+                <use href="img/sprite.svg#icon-phone"></use>
+              </svg>
+              <span>
+                +7 (812) 903-54-45
+              </span>
+            </a>
+
+            <a class="contacts__address" href="https://yandex.ru/maps/-/CPxlZ~q">
+              <p>
+                Ул. Галерная, д 55,
+              </p>
+              <span>
+                Санкт-Петербург
+              </span>
+            </a>
+
+
+            <a class="contacts__mail" href="mailto:9035445@gmail.com">
+              <svg width="24" height="24">
+                <use href="img/sprite.svg#icon-email"></use>
+              </svg>
+              <span>
+                9035445@gmail.com
+              </span>
+            </a>
+          </div>
+
+          <p class="footer__copyright">
+            © FIX Ремонт, 2016
+          </p>
+
+        </div>
       </footer>
     </div>
 
-    <!-- Модалки -->
-    <!-- <div class="modal modal--preload" data-modal="feedback">
+    <div class="modal modal--success" data-modal="success">
       <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
+        <h2 class="modal__title title">
+          Узнайте о запуске сервиса первым
+        </h2>
+
+        <p class="modal__description">
+          Спасибо! Мы будем держать вас в курсе обновлений
+        </p>
       </div>
     </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div> -->
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
