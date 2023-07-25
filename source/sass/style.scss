@@ -10,10 +10,13 @@
 
 @import "variables";
 @import "mixins";
+@import "functions";
 @import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
+@import "global/title";
+@import "global/description";
 
 // Blocks
 // ---------------------------------
@@ -24,6 +27,10 @@
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
 @import "blocks/main-header";
+@import "blocks/intro";
+@import "blocks/about";
+@import "blocks/examples";
+@import "blocks/form";
 
 // ---------------------------------
 

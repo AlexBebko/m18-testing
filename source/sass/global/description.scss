@@ -1,0 +1,13 @@
+.description {
+  font-family: $ff-muller-reg;
+  font-size: size(16px);
+  font-weight: 400;
+  line-height: size(24px);
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+
+  &--green {
+    font-family: $ff-muller-med;
+    color: $color-sea-green;
+  }
+}

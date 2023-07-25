@@ -1,0 +1,3 @@
+@function size($size-in-px) {
+  @return calc($size-in-px / 1880px * 100vw);
+}
