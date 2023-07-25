@@ -1,0 +1,94 @@
+.intro {
+  height: 100vh;
+  margin: size(20px);
+  margin-left: size(110px);
+
+
+  &__wrapper {
+    height: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: size(306px);
+  }
+
+  &__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: size(306px);
+    padding-bottom: size(51px);
+    max-width: size(520px);
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: size(27px);
+    font-family: $ff-muller-med;
+    font-size: size(64px);
+    font-weight: 400;
+    line-height: size(64px);
+  }
+
+  &__description {
+    margin: 0;
+    margin-bottom: size(44px);
+    font-family: $ff-muller-reg;
+    font-size: size(21px);
+    font-weight: 400;
+    line-height: size(30px);
+  }
+
+  &__button-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: size(31px);
+
+    color: $color-dim-gray;
+  }
+
+  &__btn {
+    width: size(260px);
+  }
+
+  &__scroll-btn {
+    display: flex;
+    align-items: center;
+    column-gap: size(9px);
+    width: size(250px);
+    margin-top: auto;
+
+    animation-name: jump;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    svg {
+      transform: scaleX(1);
+      transition: transform $trans-default;
+    }
+
+    &:hover,
+    :focus {
+      animation: none;
+
+      svg {
+        transform: scaleX(0.8);
+        transition: transform $trans-default;
+      }
+    }
+
+    span {
+      display: block;
+      width: size(197px);
+
+      color: $color-orange;
+      font-family: $ff-muller-med;
+      font-size: size(16px);
+      font-weight: 400;
+      line-height: size(18px);
+    }
+  }
+}

@@ -16,13 +16,13 @@
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
-@import "global/title";
-@import "global/description";
 
 // Blocks
 // ---------------------------------
 
 @import "blocks/btn";
+@import "blocks/title";
+@import "blocks/description";
 @import "blocks/modal";
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";

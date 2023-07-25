@@ -1,9 +1,9 @@
 .btn {
   display: block;
-  padding: 17.5px 0 14.5px;
+  padding: size(17.5px) 0 size(14.5px);
   text-align: center;
 
-  min-width: 250px;
+  min-width: size(250px);
 
   color: $color-default-white;
   font-family: $ff-muller-reg;
@@ -15,7 +15,7 @@
   box-shadow: 0px 7px 15px rgba(249, 87, 46, 0.60);
   cursor: pointer;
 
-  transition: background-color $trans-default;
+  transition: background-color $trans-default, opacity $trans-default, box-shadow $trans-default;
 
   &:disabled {
     opacity: 0.5;
@@ -23,7 +23,15 @@
     pointer-events: none;
   }
 
-  @include hover-focus {
+  &:hover,
+  &:focus {
     background-color: $color-coral;
+    transition: background-color $trans-default, box-shadow $trans-default;
+    box-shadow: 0px 15px 20px rgba(249, 87, 46, 0.70);
+  }
+
+  &:active {
+    opacity: 0.8;
+    transition: opacity $trans-default;
   }
 }

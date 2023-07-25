@@ -1,15 +1,52 @@
-.main-header__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.main-header {
+  position: absolute;
+  width: 100%;
 
-  padding-top: 48px;
-}
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-.main-header__contacts {
-  display: flex;
-  gap: 9px;
-  align-items: center;
-  font-family: $ff-muller-reg;
-  font-weight: 400;
+    padding-top: size(48px);
+  }
+
+  &__logo {
+    img {
+      width: size(200px);
+      height: size(54px);
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    gap: size(9px);
+    align-items: center;
+    font-family: $ff-muller-reg;
+    font-weight: 400;
+
+    svg {
+      width: size(24px);
+      height: size(24px);
+    }
+
+    &:hover,
+    :focus {
+      span {
+        color: $color-orange;
+        transition: color $trans-default;
+      }
+
+      svg {
+        animation-name: vibration;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+    }
+
+    &:active {
+      opacity: 0.8;
+      transition: opacity $trans-default;
+    }
+  }
 }

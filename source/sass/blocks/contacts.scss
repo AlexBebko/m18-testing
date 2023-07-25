@@ -16,7 +16,7 @@
     column-gap: size(9px);
 
     &--phone {
-      transition: color $trans-default;
+      transition: color $trans-default, opacity $trans-default;
 
       &:hover,
       :focus {
@@ -27,10 +27,15 @@
 
         svg {
           animation-name: vibration;
-          animation-duration: 1s;
+          animation-duration: 1.5s;
           animation-iteration-count: infinite;
           animation-timing-function: linear;
       }
+      }
+
+      &:active {
+        opacity: 0.8;
+        transition: opacity $trans-default;
       }
     }
 
@@ -56,7 +61,7 @@
     &--mail {
       span {
         position: relative;
-        transition: color $trans-default;
+        transition: color $trans-default, opacity $trans-default;
 
         &::before {
           position: absolute;
@@ -72,15 +77,20 @@
       :focus {
         span {
           color: $color-orange;
-          transition: color $trans-default;
+          transition: color $trans-default, opacity $trans-default;
         }
 
         svg {
-          animation-name: mail;
-          animation-duration: 1s;
+          animation-name: shake;
+          animation-duration: 1.5s;
           animation-iteration-count: infinite;
           animation-timing-function: linear;
+        }
       }
+
+      &:active {
+        opacity: 0.8;
+        transition: opacity $trans-default;
       }
     }
   }
