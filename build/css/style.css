@@ -314,6 +314,111 @@ template {
   display: none;
 }
 
+@-webkit-keyframes vibration {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  40% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  60% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  80% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes vibration {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  40% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  60% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  80% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes mail {
+  0% {
+    -webkit-transform: rotate(0deg) translate(0px, 0px);
+            transform: rotate(0deg) translate(0px, 0px);
+  }
+  20% {
+    -webkit-transform: rotate(0deg) translate(1px, 0px);
+            transform: rotate(0deg) translate(1px, 0px);
+  }
+  40% {
+    -webkit-transform: rotate(0deg) translate(-1px, 0px);
+            transform: rotate(0deg) translate(-1px, 0px);
+  }
+  60% {
+    -webkit-transform: rotate(0deg) translate(1px, 0px);
+            transform: rotate(0deg) translate(1px, 0px);
+  }
+  80% {
+    -webkit-transform: rotate(0deg) translate(-1px, 0px);
+            transform: rotate(0deg) translate(-1px, 0px);
+  }
+  100% {
+    -webkit-transform: rotate(0deg) translate(0px, 0px);
+            transform: rotate(0deg) translate(0px, 0px);
+  }
+}
+@keyframes mail {
+  0% {
+    -webkit-transform: rotate(0deg) translate(0px, 0px);
+            transform: rotate(0deg) translate(0px, 0px);
+  }
+  20% {
+    -webkit-transform: rotate(0deg) translate(1px, 0px);
+            transform: rotate(0deg) translate(1px, 0px);
+  }
+  40% {
+    -webkit-transform: rotate(0deg) translate(-1px, 0px);
+            transform: rotate(0deg) translate(-1px, 0px);
+  }
+  60% {
+    -webkit-transform: rotate(0deg) translate(1px, 0px);
+            transform: rotate(0deg) translate(1px, 0px);
+  }
+  80% {
+    -webkit-transform: rotate(0deg) translate(-1px, 0px);
+            transform: rotate(0deg) translate(-1px, 0px);
+  }
+  100% {
+    -webkit-transform: rotate(0deg) translate(0px, 0px);
+            transform: rotate(0deg) translate(0px, 0px);
+  }
+}
 @font-face {
   font-style: normal;
   font-weight: 400;
@@ -1366,6 +1471,17 @@ button,
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
+.contacts .contacts__item--phone:hover svg,
+.contacts .contacts__item--phone :focus svg {
+  -webkit-animation-name: vibration;
+          animation-name: vibration;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
 .contacts .contacts__item--address {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1404,6 +1520,17 @@ button,
   color: #f9572e;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
+}
+.contacts .contacts__item--mail:hover svg,
+.contacts .contacts__item--mail :focus svg {
+  -webkit-animation-name: mail;
+          animation-name: mail;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 
 /* @mixin hover-focus {

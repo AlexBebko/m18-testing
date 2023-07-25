@@ -24,6 +24,13 @@
           color: $color-orange;
           transition: color $trans-default;
         }
+
+        svg {
+          animation-name: vibration;
+          animation-duration: 1s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+      }
       }
     }
 
@@ -67,6 +74,13 @@
           color: $color-orange;
           transition: color $trans-default;
         }
+
+        svg {
+          animation-name: mail;
+          animation-duration: 1s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+      }
       }
     }
   }
