@@ -1380,6 +1380,7 @@ button,
 .main-header {
   position: absolute;
   width: 100%;
+  z-index: 100;
 }
 .main-header__wrapper {
   display: -webkit-box;
@@ -1465,9 +1466,9 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
+  height: calc(100% - 40px);
   padding-top: 16.2765957447vw;
-  padding-bottom: 2.7127659574vw;
+  padding-bottom: 1.6489361702vw;
   max-width: 27.6595744681vw;
 }
 .intro__title {
@@ -1556,6 +1557,35 @@ button,
   font-size: 0.8510638298vw;
   font-weight: 400;
   line-height: 0.9574468085vw;
+}
+.intro__video-wrapper {
+  position: relative;
+  width: 50vw;
+  height: calc(100% - 40px);
+  background-image: url("../img/video-cover.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.intro__video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("../img/svg/button-play.svg") no-repeat center;
+  background-size: 13.2978723404vw 13.2978723404vw;
+  z-index: 5;
+  -webkit-transition: background-size 0.3s ease;
+  transition: background-size 0.3s ease;
+  cursor: pointer;
+}
+.intro__video:hover {
+  background-size: 14.6276595745vw 14.6276595745vw;
+  -webkit-transition: background-size 0.3s ease;
+  transition: background-size 0.3s ease;
 }
 
 .footer {
