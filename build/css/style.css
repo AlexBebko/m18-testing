@@ -1237,6 +1237,175 @@ button,
   font-weight: 400;
 }
 
+.footer {
+  background-color: #f2f2f2;
+}
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 3.829787234vw;
+  margin: 0 auto;
+  text-align: center;
+}
+.footer__title {
+  font-family: "Muller Regular", "Arial", sans-serif;
+  font-size: 1.1170212766vw;
+  font-weight: 400;
+  line-height: 1.3829787234vw;
+  letter-spacing: -0.01px;
+  margin: 0;
+  margin-bottom: 0.2659574468vw;
+}
+.footer__description {
+  margin: 0;
+  margin-bottom: 4.0425531915vw;
+  width: 23.3510638298vw;
+  font-family: "Muller Regular", "Arial", sans-serif;
+  font-size: 0.8510638298vw;
+  font-weight: 400;
+  line-height: 1.2765957447vw;
+  letter-spacing: -0.01px;
+  color: #666666;
+}
+.footer__copyright {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  padding: 1.6755319149vw 0 1.5425531915vw;
+  border-top: 1px solid #cccccc;
+  font-family: "Muller Regular", "Arial", sans-serif;
+  font-size: 0.8510638298vw;
+  font-weight: 400;
+  line-height: 1.2765957447vw;
+  letter-spacing: -0.01px;
+  color: #666666;
+}
+
+.socials {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: (-webkit-max-content)[3];
+  -ms-grid-columns: (max-content)[3];
+  grid-template-columns: repeat(3, -webkit-max-content);
+  grid-template-columns: repeat(3, max-content);
+  gap: 1.5957446809vw;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1.7021276596vw;
+}
+.socials__item {
+  width: 2.7127659574vw;
+  height: 2.7127659574vw;
+}
+.socials__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  color: #f9572e;
+}
+.socials__link svg {
+  width: 100%;
+  height: 100%;
+}
+.socials__link:hover,
+.socials__link :focus {
+  -webkit-box-shadow: 0px 7px 15px rgba(249, 87, 46, 0.6);
+          box-shadow: 0px 7px 15px rgba(249, 87, 46, 0.6);
+  color: #ff7B59;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.contacts {
+  margin: 0;
+  margin-bottom: 3.7765957447vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Muller Regular", "Arial", sans-serif;
+  font-size: 1.1170212766vw;
+  font-weight: 400;
+  line-height: 1.5957446809vw;
+  letter-spacing: -0.01px;
+}
+.contacts .contacts__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 0.4787234043vw;
+     -moz-column-gap: 0.4787234043vw;
+          column-gap: 0.4787234043vw;
+}
+.contacts .contacts__item--phone {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.contacts .contacts__item--phone:hover span,
+.contacts .contacts__item--phone :focus span {
+  color: #f9572e;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.contacts .contacts__item--address {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 6.5957446809vw;
+  margin-right: 5.0531914894vw;
+}
+.contacts .contacts__item--address p {
+  margin: 0;
+}
+.contacts .contacts__item--address span {
+  display: block;
+  margin-top: -5px;
+  font-size: 0.8510638298vw;
+  font-weight: 400;
+  line-height: 1.2765957447vw;
+  letter-spacing: -0.01px;
+  color: #666666;
+}
+.contacts .contacts__item--mail span {
+  position: relative;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.contacts .contacts__item--mail span::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #f9572e;
+  bottom: 0;
+}
+.contacts .contacts__item--mail:hover span,
+.contacts .contacts__item--mail :focus span {
+  color: #f9572e;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {

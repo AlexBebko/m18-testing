@@ -1,0 +1,55 @@
+.footer {
+  background-color: $color-smoke;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: size(72px);
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__title {
+    font-family: $ff-muller-reg;
+    font-size: size(21px);
+    font-weight: 400;
+    line-height: size(26px);
+    letter-spacing: -0.01px;
+
+    margin: 0;
+    margin-bottom: size(5px);
+  }
+
+  &__description {
+    margin: 0;
+    margin-bottom: size(76px);
+
+    width: size(439px);
+
+    font-family: $ff-muller-reg;
+    font-size: size(16px);
+    font-weight: 400;
+    line-height: size(24px);
+    letter-spacing: -0.01px;
+
+    color: $color-dim-gray;
+  }
+
+  &__copyright {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    padding: size(31.5px) 0 size(29px);
+    border-top: 1px solid $color-light-grey;
+
+    font-family: $ff-muller-reg;
+    font-size: size(16px);
+    font-weight: 400;
+    line-height: size(24px);
+    letter-spacing: -0.01px;
+
+    color: $color-dim-gray;
+  }
+}
