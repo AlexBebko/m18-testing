@@ -728,6 +728,7 @@ button,
 }
 
 .title {
+  margin: 0;
   font-family: "Muller Medium", "Arial", sans-serif;
   font-size: 2.1276595745vw;
   font-weight: 400;
@@ -735,6 +736,7 @@ button,
 }
 
 .description {
+  margin: 0;
   font-family: "Muller Regular", "Arial", sans-serif;
   font-size: 0.8510638298vw;
   font-weight: 400;
@@ -1586,6 +1588,74 @@ button,
   background-size: 14.6276595745vw 14.6276595745vw;
   -webkit-transition: background-size 0.3s ease;
   transition: background-size 0.3s ease;
+}
+
+.about__wrapper {
+  width: 52.1276595745vw;
+  padding: 0;
+  padding-top: 8.829787234vw;
+  margin-bottom: 9.7872340426vw;
+}
+.about__title {
+  margin-bottom: 0.4255319149vw;
+}
+.about__description {
+  margin-bottom: 3.3510638298vw;
+}
+.about__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+  gap: 2.1808510638vw 4.2553191489vw;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.about__item {
+  min-height: 9.5744680851vw;
+  position: relative;
+  padding-top: 1.7553191489vw;
+}
+.about__item::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 4px;
+  top: 0;
+  background-color: #63d2c1;
+}
+.about__item-title {
+  margin: 0;
+  margin-bottom: 0.6382978723vw;
+  font-family: "Muller Medium", "Arial", sans-serif;
+  font-size: 1.2765957447vw;
+  font-weight: 400;
+  line-height: 1.7021276596vw;
+}
+.about__item-description {
+  margin: 0;
+  font-family: "Muller Regular", "Arial", sans-serif;
+  font-size: 0.8510638298vw;
+  font-weight: 400;
+  line-height: 1.2765957447vw;
+  color: #666666;
+}
+.about__item-description--big {
+  font-family: "Muller Medium", "Arial", sans-serif;
+  font-size: 3.4042553191vw;
+  font-weight: 400;
+  line-height: 3.1914893617vw;
+  color: #000000;
+}
+.about__item--square {
+  text-align: center;
+  border: 4px solid #63d2c1;
+}
+.about__item--square::before {
+  content: none;
 }
 
 .footer {
