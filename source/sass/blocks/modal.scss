@@ -7,12 +7,9 @@
   z-index: 1000;
 
   display: flex;
-  flex-direction: column;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
+  align-items: center;
 
   background-color: rgba($color-default-black, 0.8);
-  transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
 
@@ -30,18 +27,46 @@
   }
 
   &__wrapper {
-    position: relative;
+    width: size(984px);
+    height: size(681px);
+    background-color: $color-default-white;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: size(36px);
+  }
 
-    display: flex;
-    flex-shrink: 0;
-    justify-content: center;
-    align-items: center;
+  &__text-container {
     width: 100%;
-    min-height: 100%;
-    padding: 60px 40px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 4px solid $color-downy;
+    text-align: center;
+  }
 
-    @include vp-767 {
-      padding: 60px 16px;
+  &__title {
+    position: relative;
+    width: max-content;
+    margin: 0 auto;
+    padding: 0 size(15px) 0 size(21px);
+    top: size(-25px);
+    background-color: $color-default-white;
+  }
+
+  &__description {
+    position: relative;
+    margin: 0 auto;
+    padding: size(332px) 0 0;
+    width: size(275px);
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 214px;
+      height: 148px;
+      bottom: size(90px);
+      left: size(20px);
+      background-image: url(../img/svg/icon-success.svg);
     }
   }
 
@@ -110,7 +135,6 @@
   }
 
   &.is-active {
-    transform: scale(1);
     visibility: visible;
     opacity: 1;
 

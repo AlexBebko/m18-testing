@@ -762,16 +762,10 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: rgba(0, 0, 0, 0.8);
-  -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
@@ -786,26 +780,45 @@ button,
   display: none;
 }
 .modal__wrapper {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  min-height: 100%;
-  padding: 60px 40px;
+  width: 52.3404255319vw;
+  height: 36.2234042553vw;
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 1.914893617vw;
 }
-@media (max-width: 767px) {
-  .modal__wrapper {
-    padding: 60px 16px;
-  }
+.modal__text-container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 4px solid #63d2c1;
+  text-align: center;
+}
+.modal__title {
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  padding: 0 0.7978723404vw 0 1.1170212766vw;
+  top: -1.329787234vw;
+  background-color: #ffffff;
+}
+.modal__description {
+  position: relative;
+  margin: 0 auto;
+  padding: 17.6595744681vw 0 0;
+  width: 14.6276595745vw;
+}
+.modal__description::before {
+  content: "";
+  position: absolute;
+  width: 214px;
+  height: 148px;
+  bottom: 4.7872340426vw;
+  left: 1.0638297872vw;
+  background-image: url(../img/svg/icon-success.svg);
 }
 .modal__overlay {
   position: absolute;
@@ -860,9 +873,6 @@ button,
   transition: none;
 }
 .modal.is-active {
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
