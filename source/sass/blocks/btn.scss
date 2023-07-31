@@ -1,6 +1,6 @@
 .btn {
   display: block;
-  padding: size(17.5px) 0 size(14.5px);
+  padding: size(17.5px) size(10px) size(14.5px);
   text-align: center;
 
   min-width: size(250px);
@@ -28,6 +28,7 @@
     background-color: $color-coral;
     transition: background-color $trans-default, box-shadow $trans-default;
     box-shadow: 0px 15px 20px rgba(249, 87, 46, 0.70);
+    outline: none;
   }
 
   &:active {

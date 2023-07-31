@@ -1,0 +1,15 @@
+.examples {
+  &__wrapper {
+    width: size(980px);
+    padding: 0;
+    padding-top: size(184px);
+  }
+
+  &__title {
+    margin-bottom: size(8px);
+  }
+
+  &__description {
+    margin-bottom: size(52px);
+  }
+}

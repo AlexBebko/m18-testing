@@ -119,11 +119,12 @@
             <p class="examples__description description description--green">
               Скандинавский, классический и эко-стиль
             </p>
-            <ul class="examples__list">
-              <li class="examples__item">
+            <div class="examples__list slider">
+            <ul class="slider__container">
+              <li class="slider__item slider__item--prev">
                 <figure>
                   <picture>
-                    <source>
+                    <source type="image/webp" srcset="img/eco.webp">
                     <img src="img/eco.jpg" width="750" height="500" alt="Кухня в экостиле.">
                   </picture>
                   <figcaption>
@@ -131,10 +132,10 @@
                   </figcaption>
                 </figure>
               </li>
-              <li class="examples__item">
+              <li class="slider__item slider__item--current">
                 <figure>
                   <picture>
-                    <source>
+                    <source type="image/webp" srcset="img/scandinavian.webp">
                     <img src="img/scandinavian.jpg" width="750" height="500" alt="Ванной комната в скандинавском стиле.">
                   </picture>
                   <figcaption>
@@ -142,10 +143,10 @@
                   </figcaption>
                 </figure>
               </li>
-              <li class="examples__item">
+              <li class="slider__item slider__item--next">
                 <figure>
                   <picture>
-                    <source>
+                    <source type="image/webp" srcset="img/classic.webp">
                     <img src="img/classic.jpg" width="750" height="500" alt="Гостиная в классическом стиле.">
                   </picture>
                   <figcaption>
@@ -154,12 +155,14 @@
                 </figure>
               </li>
             </ul>
+            <button type="button" class="slider__button slider__button--prev" aria-label="Посмотреть предыдущий слайд"></button>
+            <button type="button" class="slider__button slider__button--next" aria-label="Посмотреть следующий слайд"></button>
           </div>
         </section>
 
         <section class="form" id="form">
           <div class="form__wrapper container">
-            <form class="form" method="post">
+            <form class="form__container" method="post">
               <h2 class="form__title title">
                 Узнайте о запуске сервиса первым
               </h2>
@@ -254,7 +257,7 @@
 
 
             <a class="contacts__item contacts__item--mail" href="mailto:9035445@gmail.com">
-              <svg width="24" height="24">
+              <svg width="30" height="20">
                 <use href="img/sprite.svg#icon-email"></use>
               </svg>
               <span>

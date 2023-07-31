@@ -1,6 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import {Form} from './modules/form-validate/form';
+// import {Form} from './modules/form-validate/form';
 import {playVideo} from './modules/play-video';
 
 
@@ -21,9 +21,9 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     playVideo();
     initModals();
-    const form = new Form();
-    window.form = form;
-    form.init();
+    // const form = new Form();
+    // window.form = form;
+    // form.init();
   });
 });
 

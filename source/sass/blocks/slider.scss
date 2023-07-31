@@ -1,0 +1,97 @@
+.slider {
+  position: relative;
+
+  &__container {
+    position: relative;
+    height: size(500px);
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  &__item {
+    position: absolute;
+    margin-bottom: 0;
+    opacity: .6;
+    transition: transform .6s ease, opacity .6s ease;
+
+    figure {
+      position: relative;
+      margin: 0;
+
+      img {
+        height: size(500px);
+        width: size(750px);
+      }
+
+      figcaption {
+        position: absolute;
+        top: 0;
+        right: size(-168px);
+        width: size(150px);
+        font-size: size(13px);
+        line-height: size(20px);
+        color: #666;
+        opacity: 0;
+        transition: opacity $trans-600;
+      }
+    }
+
+    &--current {
+      transform: translateX(0);
+      display: block;
+      opacity: 1;
+
+      figure {
+        figcaption {
+          opacity: 1;
+        }
+      }
+    }
+
+    &--prev {
+      transform: translateX(-122%);
+    }
+
+    &--prev-prev {
+      transform: translateX(-244%);
+    }
+
+    &--next {
+      transform: translateX(130%);
+    }
+
+    &--next-next {
+      transform: translateX(260%);
+    }
+  }
+
+
+  &__button {
+    position: absolute;
+    bottom: 0;
+    right: size(70px);
+    background-image: url("../img/svg/icon-next.svg");
+    background-color: $color-transparent;
+    background-position: center;
+    background-size: contain;
+    width: size(23px);
+    height: size(44px);
+    border: none;
+    cursor: pointer;
+    transition: transform $trans-600;
+
+    &--prev {
+      background-image: url("../img/svg/icon-prev.svg");
+      right: size(118px);
+    }
+
+    &:hover,
+    &:focus {
+      transform: scaleY(0.8);
+      transition: transform $trans-600;
+      outline: none;
+    }
+  }
+}

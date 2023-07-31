@@ -18,14 +18,23 @@
     &--phone {
       transition: color $trans-default, opacity $trans-default;
 
+      svg {
+        width: size(24px);
+        height: size(24px);
+      }
+
       &:hover,
-      :focus {
+      &:focus {
+        outline: none;
         span {
           color: $color-orange;
           transition: color $trans-default;
         }
 
         svg {
+          width: size(24px);
+          height: size(24px);
+
           animation-name: vibration;
           animation-duration: 1.5s;
           animation-iteration-count: infinite;
@@ -43,9 +52,11 @@
       flex-direction: column;
       margin-left: size(124px);
       margin-right: size(95px);
+
       p {
         margin: 0;
       }
+
       span {
         display: block;
         margin-top: -5px;
@@ -56,9 +67,21 @@
 
         color: $color-dim-gray;
       }
+      &:hover,
+      &:focus {
+        outline: none;
+        color: $color-orange;
+        transition: color $trans-default;
+    }
     }
 
+
     &--mail {
+      svg {
+        width: size(30px);
+        height: size(20px);
+      }
+
       span {
         position: relative;
         transition: color $trans-default, opacity $trans-default;
@@ -74,7 +97,8 @@
       }
 
       &:hover,
-      :focus {
+      &:focus {
+        outline: none;
         span {
           color: $color-orange;
           transition: color $trans-default, opacity $trans-default;

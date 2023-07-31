@@ -629,6 +629,7 @@ button,
   min-height: 100vh;
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
+  overflow: hidden;
 }
 .wrapper .header,
 .wrapper .footer {
@@ -639,6 +640,7 @@ button,
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  margin-bottom: 7.3404255319vw;
 }
 
 .visually-hidden {
@@ -691,7 +693,7 @@ button,
 
 .btn {
   display: block;
-  padding: 0.9308510638vw 0 0.7712765957vw;
+  padding: 0.9308510638vw 0.5319148936vw 0.7712765957vw;
   text-align: center;
   min-width: 13.2978723404vw;
   color: #ffffff;
@@ -720,6 +722,7 @@ button,
   transition: background-color 0.3s ease, box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
   -webkit-box-shadow: 0px 15px 20px rgba(249, 87, 46, 0.7);
           box-shadow: 0px 15px 20px rgba(249, 87, 46, 0.7);
+  outline: none;
 }
 .btn:active {
   opacity: 0.8;
@@ -1594,7 +1597,6 @@ button,
   width: 52.1276595745vw;
   padding: 0;
   padding-top: 8.829787234vw;
-  margin-bottom: 9.7872340426vw;
 }
 .about__title {
   margin-bottom: 0.4255319149vw;
@@ -1656,6 +1658,255 @@ button,
 }
 .about__item--square::before {
   content: none;
+}
+
+.examples__wrapper {
+  width: 52.1276595745vw;
+  padding: 0;
+  padding-top: 9.7872340426vw;
+}
+.examples__title {
+  margin-bottom: 0.4255319149vw;
+}
+.examples__description {
+  margin-bottom: 2.7659574468vw;
+}
+
+.slider {
+  position: relative;
+}
+.slider__container {
+  position: relative;
+  height: 26.5957446809vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.slider__item {
+  position: absolute;
+  margin-bottom: 0;
+  opacity: 0.6;
+  -webkit-transition: opacity 0.6s ease, -webkit-transform 0.6s ease;
+  transition: opacity 0.6s ease, -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  transition: transform 0.6s ease, opacity 0.6s ease, -webkit-transform 0.6s ease;
+}
+.slider__item figure {
+  position: relative;
+  margin: 0;
+}
+.slider__item figure img {
+  height: 26.5957446809vw;
+  width: 39.8936170213vw;
+}
+.slider__item figure figcaption {
+  position: absolute;
+  top: 0;
+  right: -8.9361702128vw;
+  width: 7.9787234043vw;
+  font-size: 0.6914893617vw;
+  line-height: 1.0638297872vw;
+  color: #666;
+  opacity: 0;
+  -webkit-transition: opacity 0.6s ease;
+  transition: opacity 0.6s ease;
+}
+.slider__item--current {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+  display: block;
+  opacity: 1;
+}
+.slider__item--current figure figcaption {
+  opacity: 1;
+}
+.slider__item--prev {
+  -webkit-transform: translateX(-122%);
+      -ms-transform: translateX(-122%);
+          transform: translateX(-122%);
+}
+.slider__item--prev-prev {
+  -webkit-transform: translateX(-244%);
+      -ms-transform: translateX(-244%);
+          transform: translateX(-244%);
+}
+.slider__item--next {
+  -webkit-transform: translateX(130%);
+      -ms-transform: translateX(130%);
+          transform: translateX(130%);
+}
+.slider__item--next-next {
+  -webkit-transform: translateX(260%);
+      -ms-transform: translateX(260%);
+          transform: translateX(260%);
+}
+.slider__button {
+  position: absolute;
+  bottom: 0;
+  right: 3.7234042553vw;
+  background-image: url("../img/svg/icon-next.svg");
+  background-color: rgba(255, 255, 255, 0);
+  background-position: center;
+  background-size: contain;
+  width: 1.2234042553vw;
+  height: 2.3404255319vw;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.6s ease;
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+}
+.slider__button--prev {
+  background-image: url("../img/svg/icon-prev.svg");
+  right: 6.2765957447vw;
+}
+.slider__button:hover, .slider__button:focus {
+  -webkit-transform: scaleY(0.8);
+      -ms-transform: scaleY(0.8);
+          transform: scaleY(0.8);
+  -webkit-transition: -webkit-transform 0.6s ease;
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+  outline: none;
+}
+
+.form__wrapper {
+  width: 52.1276595745vw;
+  padding: 0;
+  padding-top: 8.5638297872vw;
+}
+.form__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 4px solid #63d2c1;
+  padding-bottom: 3.1382978723vw;
+}
+.form__title {
+  position: relative;
+  top: -1.329787234vw;
+  background-color: #ffffff;
+  padding: 0 0.7978723404vw 0 1.1170212766vw;
+}
+.form__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 20.2127659574vw;
+  min-height: 3.6170212766vw;
+  padding-left: 3.3510638298vw;
+  margin-bottom: 2.7127659574vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.form__description::before {
+  position: absolute;
+  content: "";
+  width: 2.3936170213vw;
+  height: 3.6170212766vw;
+  top: 0;
+  left: 0;
+  background-image: url("../img/svg/icon-door.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.form__field {
+  width: 26.5957446809vw;
+  margin-bottom: 1.5957446809vw;
+}
+.form__field:last-of-type {
+  margin-bottom: 2.5531914894vw;
+}
+.form__field label {
+  position: relative;
+  top: 0.6914893617vw;
+  left: 1.0638297872vw;
+  background-color: #ffffff;
+  padding: 0 0.3723404255vw 0 0.3191489362vw;
+  font-size: 0.6914893617vw;
+  line-height: 1.2765957447vw;
+  opacity: 0;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+}
+.form__field input {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+  padding: 1.0372340426vw 1.25vw 0.8776595745vw;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+}
+.form__field input::-webkit-input-placeholder {
+  color: #666666;
+  font-family: "Muller Regular", "Arial", sans-serif;
+  font-size: 0.9574468085vw;
+  font-weight: 400;
+  line-height: 1.2765957447vw;
+}
+.form__field input::-moz-placeholder {
+  color: #666666;
+  font-family: "Muller Regular", "Arial", sans-serif;
+  font-size: 0.9574468085vw;
+  font-weight: 400;
+  line-height: 1.2765957447vw;
+}
+.form__field input:-ms-input-placeholder {
+  color: #666666;
+  font-family: "Muller Regular", "Arial", sans-serif;
+  font-size: 0.9574468085vw;
+  font-weight: 400;
+  line-height: 1.2765957447vw;
+}
+.form__field input::-ms-input-placeholder {
+  color: #666666;
+  font-family: "Muller Regular", "Arial", sans-serif;
+  font-size: 0.9574468085vw;
+  font-weight: 400;
+  line-height: 1.2765957447vw;
+}
+.form__field input::placeholder {
+  color: #666666;
+  font-family: "Muller Regular", "Arial", sans-serif;
+  font-size: 0.9574468085vw;
+  font-weight: 400;
+  line-height: 1.2765957447vw;
+}
+.form__field:hover input, .form__field:focus input, .form__field:focus-within input {
+  border-color: #f9572e;
+  outline: none;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+}
+.form__field:hover label, .form__field:focus label, .form__field:focus-within label {
+  color: #f9572e;
+  opacity: 1;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+}
+.form__button {
+  margin-bottom: 1.170212766vw;
+}
+.form a {
+  color: #f9572e;
+}
+.form a:hover, .form a:focus {
+  color: #ff7B59;
 }
 
 .footer {
@@ -1742,13 +1993,13 @@ button,
   width: 100%;
   height: 100%;
 }
-.socials__link:hover,
-.socials__link :focus {
+.socials__link:hover, .socials__link:focus {
   -webkit-box-shadow: 0px 15px 20px rgba(249, 87, 46, 0.7);
           box-shadow: 0px 15px 20px rgba(249, 87, 46, 0.7);
   color: #ff7B59;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  outline: none;
 }
 .socials__link:active {
   opacity: 0.8;
@@ -1786,14 +2037,21 @@ button,
   -webkit-transition: color 0.3s ease, opacity 0.3s ease;
   transition: color 0.3s ease, opacity 0.3s ease;
 }
-.contacts .contacts__item--phone:hover span,
-.contacts .contacts__item--phone :focus span {
+.contacts .contacts__item--phone svg {
+  width: 1.2765957447vw;
+  height: 1.2765957447vw;
+}
+.contacts .contacts__item--phone:hover, .contacts .contacts__item--phone:focus {
+  outline: none;
+}
+.contacts .contacts__item--phone:hover span, .contacts .contacts__item--phone:focus span {
   color: #f9572e;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
-.contacts .contacts__item--phone:hover svg,
-.contacts .contacts__item--phone :focus svg {
+.contacts .contacts__item--phone:hover svg, .contacts .contacts__item--phone:focus svg {
+  width: 1.2765957447vw;
+  height: 1.2765957447vw;
   -webkit-animation-name: vibration;
           animation-name: vibration;
   -webkit-animation-duration: 1.5s;
@@ -1828,6 +2086,16 @@ button,
   letter-spacing: -0.01px;
   color: #666666;
 }
+.contacts .contacts__item--address:hover, .contacts .contacts__item--address:focus {
+  outline: none;
+  color: #f9572e;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.contacts .contacts__item--mail svg {
+  width: 1.5957446809vw;
+  height: 1.0638297872vw;
+}
 .contacts .contacts__item--mail span {
   position: relative;
   -webkit-transition: color 0.3s ease, opacity 0.3s ease;
@@ -1841,14 +2109,15 @@ button,
   background-color: #f9572e;
   bottom: 0;
 }
-.contacts .contacts__item--mail:hover span,
-.contacts .contacts__item--mail :focus span {
+.contacts .contacts__item--mail:hover, .contacts .contacts__item--mail:focus {
+  outline: none;
+}
+.contacts .contacts__item--mail:hover span, .contacts .contacts__item--mail:focus span {
   color: #f9572e;
   -webkit-transition: color 0.3s ease, opacity 0.3s ease;
   transition: color 0.3s ease, opacity 0.3s ease;
 }
-.contacts .contacts__item--mail:hover svg,
-.contacts .contacts__item--mail :focus svg {
+.contacts .contacts__item--mail:hover svg, .contacts .contacts__item--mail:focus svg {
   -webkit-animation-name: shake;
           animation-name: shake;
   -webkit-animation-duration: 1.5s;
